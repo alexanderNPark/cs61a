@@ -75,6 +75,7 @@ def merge(s0, s1):
     i0, i1 = iter(s0), iter(s1)
     e0, e1 = next(i0, None), next(i1, None)
     "*** YOUR CODE HERE ***"
+    e=0
 
 # Q8
 def remainders_generator(m):
