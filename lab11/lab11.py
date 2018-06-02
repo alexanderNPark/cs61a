@@ -51,7 +51,7 @@ def trap(s, k):
     while(True):
         if(i<k):
             yield next(f)
-        else
+        else:
             raise ValueError()
         i+=1
 
