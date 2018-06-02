@@ -1,0 +1,31 @@
+def modulo_inverse(a,b):
+
+    matrix = [[1,0], [0,1]]
+
+    if(gcd(a,b)!=1):
+        return 'error'
+
+    if(b>a):
+        a,b=b,a
+    original_a = a
+
+    while(b>1):
+        factor = a//b
+        matrix[1]=list(map(lambda var:var*factor,matrix[1]))
+        matrix.append([matrix[0][0]-matrix[1][0],matrix[0][1]-matrix[1][1]])
+        matrix.pop(0)
+        a,b = b,a%b
+    return matrix[1][1]>0 and matrix[1][1] or original_a+matrix[1][1]
+
+
+
+
+
+
+def gcd(a,b):
+    if(a%b==0):
+        return b
+    else:
+        return gcd(b,a%b)
+
+print(modulo_inverse(3,607))

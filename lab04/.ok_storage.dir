@@ -1,0 +1,5 @@
+'List Comprehension-correct', (0, 70)
+'List Indexing-correct', (512, 70)
+'if_this_not_that-correct', (1024, 70)
+'distance-correct', (1536, 70)
+'closer_city-correct', (2048, 70)
